@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "maneetersitems",
+	"version": "${version}",
+	"name": "ManeetersItems",
+	"description": "A mod that adds custom apples to the game. It also has a block compacting feature that can be used to store a lot of ores into one item.",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/maneetersitems/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.maneeter.maneetersitems.ManeetersItems"
+		],
+		"client": [
+			"net.maneeter.maneetersitems.ManeetersItemsClient"
+		],
+		"fabric-datagen": [
+			"net.maneeter.maneetersitems.ManeetersItemsGenerator"
+		]
+	},
+	"mixins": [
+		"maneetersitems.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
